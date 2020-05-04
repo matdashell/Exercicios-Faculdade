@@ -1,5 +1,5 @@
 
-package ExercicioAula;
+package exercicio.Aula;
 
 import java.util.*;
 
