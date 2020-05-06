@@ -17,7 +17,36 @@ public class Questao03 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         
-        System.out.println("Digite o valor do seu saldo médio");
+        System.out.println("Digite o valor médio do seu saldo: ");
+        
+        double media = input.nextDouble();
+        
+        if(media >= 0 && media <= 200){
+            System.out.println("Você não tem direito ao crédito!");
+            System.out.println("Saldo atual: "+media);
+        }
+        
+        else if(media > 200 && media <= 400){
+            System.out.println("Você tem direito a 20% de credito!");
+            System.out.println("Saldo atual: "+(media*1.2)/1+"\n"
+                    + "Teve um acrescimo de: "+media*0.2);
+        }
+        
+        else if(media > 400 && media <= 600){
+            System.out.println("Você tem direito a 30% de credito!");
+            System.out.println("Saldo atual: "+(media*1.3)/1+"\n"
+                    + "Teve um acrescimo de: "+media*0.3);
+        }
+        
+        else if(media > 600){
+            System.out.println("Você tem direito a 40% de credito!");
+            System.out.println("Saldo atual: "+(media*1.4)/1+"\n"
+                    + "Teve um acrescimo de: "+media*0.4);
+        }
+        
+        else{
+           System.out.println("Saldo inválido!"); 
+        }
         
     }
 }

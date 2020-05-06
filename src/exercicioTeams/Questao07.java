@@ -1,14 +1,17 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ Faça um algoritmo que leia um número e imprima a sua tabela de multiplicação de 1 até 13
  */
 package exercicioTeams;
 
-/**
- *
- * @author marcio
- */
+import java.util.Scanner;
 public class Questao07 {
-    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Digite o numero que deseja multiplicar...");
+        double numero = input.nextDouble();
+        
+        for(int i = 1; i <= 13; i++){
+            System.out.println(numero+" * "+i+" = "+i*numero);
+        }
+    }
 }
